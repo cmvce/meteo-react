@@ -1,7 +1,32 @@
 .Weather {
   text-align: center;
+  margin: 50px 0;
+  padding: 20px;
 }
 
 .Weather .btn {
   border: none;
+}
+
+.Weather .text {
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.878);
+  padding: 5px;
+}
+
+.Weather .temperature {
+  font-size: 96px;
+}
+
+.Weather .unit {
+  color: rgb(0, 1, 0);
+  font-size: 30px;
+  position: relative;
+  line-height: 1;
+  top: -40px;
+}
+.Weather li {
+  list-style: none;
 }
