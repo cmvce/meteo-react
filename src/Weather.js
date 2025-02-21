@@ -5,6 +5,7 @@ import "./Weather.css";
 import axios from "axios";
 import Info from "./Info";
 import { TailSpin } from "react-loader-spinner";
+import Forecast from "./Forecast";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -54,9 +55,9 @@ export default function Weather(props) {
           <button className='btn '>
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </button>
-
-          <Info data={weather} />
         </form>
+        <Info data={weather} />
+        <Forecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
