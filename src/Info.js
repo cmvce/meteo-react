@@ -16,10 +16,12 @@ export default function Info(props) {
         </h4>
       </div>
       <ul>
-        <li>
+        <li className='date'>
           <FormattedDate date={props.data.date} />
         </li>
-        <li className='text-capitalize'>{props.data.description}</li>
+        <li className='text-capitalize description'>
+          {props.data.description}
+        </li>
       </ul>
       <div className='forecast'>
         <ul>
