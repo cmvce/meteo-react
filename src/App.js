@@ -12,7 +12,7 @@ function App() {
           <a href='https://github.com/cmvce' target='blank_'>
             Coleene Acevedo
           </a>{" "}
-          and is <a href=''>open-sourced</a>.
+          and is <a href='/'>open-sourced</a>.
         </footer>
       </div>
     </div>
