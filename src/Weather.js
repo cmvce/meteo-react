@@ -34,8 +34,8 @@ export default function Weather(props) {
   }
 
   function search() {
-    /* let key = "80oc158tb64caae306c6eb4bf7cef14f"; */
-    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=80oc158tb64caae306c6eb4bf7cef14f`;
+    /*     let apiKey = "80oc158tb64caae306c6eb4bf7cef14f";
+     */ let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=80oc158tb64caae306c6eb4bf7cef14f`;
     axios.get(url).then(getResponse);
   }
 
