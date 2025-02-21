@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  margin: 50px;
+  background-color: #ddecee;
+  font-family: "Josefin Slab", serif;
+}
+
+.App .text-box {
+  margin-right: 10px;
+}

@@ -1,13 +1,19 @@
 import "./App.css";
+import React, { useState } from "react";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className='App'>
-      <div className='form-box'>
-        <form>
-          <input type='text' placeholder='Enter a city...' />
-          <input type='button' value='Search' />
-        </form>
+      <div className='container'>
+        <Weather defaultCity='Lausanne' />
+        <footer>
+          This project was coded by{" "}
+          <a href='https://github.com/cmvce' target='blank_'>
+            Coleene Acevedo
+          </a>{" "}
+          and is <a href=''>open-sourced</a>.
+        </footer>
       </div>
     </div>
   );
