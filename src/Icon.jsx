@@ -1,4 +1,6 @@
 import React from "react";
+
+import "./Icon.css";
 import {
   WiDaySunny,
   WiCloudy,
@@ -38,6 +40,7 @@ export default function Icon(props) {
     "mist-day": WiDayFog,
     "mist-night": WiNightFog,
   };
+
   const WeatherIcon = codeMapping[props.code];
   return (
     <div>

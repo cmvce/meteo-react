@@ -2,12 +2,13 @@ import React from "react";
 import FormattedDate from "./FormattedDay";
 import Temperature from "./Temperature";
 import Icon from "./Icon";
+import "./Weather.css";
 export default function Info(props) {
   return (
     <div className='Info'>
       <div className='container'>
         <div className='icon'>
-          <Icon code={props.data.icon} size={100} />
+          <Icon code={props.data.icon} />
         </div>
         <div className='temperature'>
           <h1>
@@ -15,8 +16,8 @@ export default function Info(props) {
           </h1>
         </div>
       </div>
-      <div className='city'>
-        <h4>
+      <div>
+        <h4 className='city'>
           {props.data.city}, {props.data.country}
         </h4>
       </div>
@@ -24,7 +25,8 @@ export default function Info(props) {
         <FormattedDate date={props.data.date} />
       </div>
       <div className='description text-capitalize'>
-        {props.data.description}
+        {props.data.description}, (Humidity:{props.data.humidity}%, Wind:
+        {props.data.wind} km/h)
       </div>
     </div>
   );

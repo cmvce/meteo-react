@@ -5,6 +5,7 @@
 }
 .Forecast .forecast-max-temp {
   font-weight: 600;
+  font-size: 18px;
 }
 .Forecast .forecast-min-temp {
   opacity: 0.7;
@@ -21,4 +22,29 @@
 
 .Forecast .forecast-day {
   font-weight: bold;
+  font-size: 16px;
+}
+.Forecast .icon-forecast {
+  font-size: 45px;
+  position: relative;
+  top: -28px;
+}
+@media (max-width: 720px) {
+  .Forecast {
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+  }
+  .Forecast .forecast-future {
+    letter-spacing: 3px;
+    padding: 10px 0;
+  }
+  .Forecast .icon-forecast {
+    font-size: 30px;
+    position: relative;
+    top: -16px;
+  }
+  .Forecast .forecast-max-temp {
+    font-size: 16px;
+  }
 }

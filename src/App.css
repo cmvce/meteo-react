@@ -4,3 +4,15 @@
   font-family: "Josefin Slab", sans-serif;
   margin: 50px;
 }
+footer {
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .App {
+    text-align: center;
+
+    font-family: "Josefin Slab", sans-serif;
+    margin: 20px 0;
+  }
+}

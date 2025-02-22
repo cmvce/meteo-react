@@ -6,6 +6,7 @@ import axios from "axios";
 import Info from "./Info";
 import { TailSpin } from "react-loader-spinner";
 import Forecast from "./Forecast";
+
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -23,7 +24,6 @@ export default function Weather(props) {
       city: response.data.city,
       country: response.data.country,
     });
-    console.log(response);
   }
 
   function click(event) {

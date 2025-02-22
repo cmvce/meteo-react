@@ -20,7 +20,7 @@ export default function ForecastDay(props) {
     <div className='forecast-future'>
       <div className='forecast-day'>{day()}</div>
       <div className='icon-forecast'>
-        <Icon code={props.data.condition.icon} size={40} />
+        <Icon code={props.data.condition.icon} />
       </div>
 
       <span className='forecast-max-temp'>{maxTemp()}</span>

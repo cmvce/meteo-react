@@ -19,7 +19,7 @@
 }
 
 .Weather .temperature {
-  font-size: 96px;
+  font-size: 100px;
   letter-spacing: 2px;
 }
 .Weather .container {
@@ -39,24 +39,28 @@
 }
 
 .Weather .city {
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-size: 24px;
+  letter-spacing: 2px;
+
+  font-size: 44px;
 }
 .Weather li {
   list-style: none;
 }
 
 .Weather .date {
-  line-height: 2;
+  line-height: 1;
   letter-spacing: 4px;
   font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .Weather .description {
   line-height: 1;
   letter-spacing: 3px;
   border-bottom: 1px solid white;
   padding: 10px;
+  font-size: 20px;
 }
 .Weather a {
   text-decoration: none;
@@ -65,4 +69,59 @@
 
 .Weather .forecast {
   margin: 20px;
+}
+
+.Weather .icon {
+  font-size: 120px;
+  position: relative;
+  top: -40px;
+}
+
+@media (max-width: 720px) {
+  .Weather {
+    padding: 50px 50px;
+    margin: 0 auto;
+  }
+  .Weather .btn {
+    border: none;
+    margin-left: 5px;
+  }
+  .Weather .text {
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.878);
+
+    letter-spacing: 1px;
+  }
+  .Weather .temperature {
+    font-size: 65px;
+    letter-spacing: 1px;
+  }
+  .Weather .unit {
+    font-size: 12px;
+
+    top: -30px;
+  }
+  .Weather .date {
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+  .Weather .description {
+    line-height: 1;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    padding: 6px;
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+  .Weather .forecast {
+    margin: 0 auto;
+  }
+
+  .Weather .icon {
+    font-size: 70px;
+    position: relative;
+    top: -20px;
+  }
 }
