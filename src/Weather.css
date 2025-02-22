@@ -1,7 +1,7 @@
 .Weather {
   margin: 0 auto;
   background-color: #ddecee;
-  padding: 100px 50px;
+  padding: 20px 50px;
 }
 
 .Weather .btn {
@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
-  grid-gap: 20px;
+  grid-gap: 10px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
 
 .Weather .city {
   letter-spacing: 2px;
-
+  margin-top: -40px;
   font-size: 44px;
 }
 .Weather li {
@@ -103,9 +103,14 @@
 
     top: -30px;
   }
+  .Weather .city {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
   .Weather .date {
     line-height: 1;
     letter-spacing: 3px;
+    font-size: 24px;
   }
   .Weather .description {
     line-height: 1;
