@@ -32,10 +32,10 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    const longitude = props.coordinates.longitude;
-    const latitude = props.coordinates.latitude;
-    let apiKey = "80oc158tb64caae306c6eb4bf7cef14f";
-    let url = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+    const lon = props.coordinates.longitude;
+    const lat = props.coordinates.latitude;
+    let key = "80oc158tb64caae306c6eb4bf7cef14f";
+    let url = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${key}&units=metric`;
     axios.get(url).then(getResponse);
     return null;
   }

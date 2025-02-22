@@ -6,7 +6,6 @@ import axios from "axios";
 import Info from "./Info";
 import { TailSpin } from "react-loader-spinner";
 import Forecast from "./Forecast";
-
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -15,6 +14,7 @@ export default function Weather(props) {
     setWeather({
       ready: true,
       coordinates: response.data.coordinates,
+
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
@@ -57,6 +57,7 @@ export default function Weather(props) {
           </button>
         </form>
         <Info data={weather} />
+
         <div className='Forecast-weather'>
           <Forecast coordinates={weather.coordinates} />
         </div>
