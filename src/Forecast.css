@@ -1,0 +1,24 @@
+.Forecast {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.Forecast .forecast-max-temp {
+  font-weight: 600;
+}
+.Forecast .forecast-min-temp {
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+.Forecast .forecast-future {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 5px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.Forecast .forecast-day {
+  font-weight: bold;
+}

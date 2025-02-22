@@ -1,8 +1,7 @@
 .Weather {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+  background-color: #ddecee;
+  padding: 100px 50px;
 }
 
 .Weather .btn {

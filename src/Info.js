@@ -26,8 +26,6 @@ export default function Info(props) {
       <div className='description text-capitalize'>
         {props.data.description}
       </div>
-
-      <div className='forecast'></div>
     </div>
   );
 }
